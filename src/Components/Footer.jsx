@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'
 function Footer() {
   return (
     <>
-      <div className=' w-full m-auto md:px-8' >
+      <div className='w-full m-auto my-10 md:my-0 md:px-8' >
         {/* Upper Side */}
         <div className='w-full m-auto flex flex-col md:flex-row justify-between items-center pb-4 md:pb-0  border-2 border-transparent border-b-white '>
           <div className='w-full md:w-1/2'>

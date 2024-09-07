@@ -33,7 +33,7 @@ function Contact() {
   return (
     <div id='contact' className=' relative'>
       <div id='contact' className='h-full w-full m-auto text-center'>
-        <h1 className=' text-5xl font-semibold py-7'>Get in touch</h1>
+        <h1 className='text-3xl md:text-5xl font-semibold py-7'>Get in touch</h1>
       </div>
 
       <BiCircle className='text-5xl animate-pulse absolute bottom-1 left-0 sm:bottom-24 sm:left-10' />
@@ -44,9 +44,9 @@ function Contact() {
       <div className='flex flex-col sm:flex-row justify-between md:px-10 '>
         {/* left side */}
         <div className='h-full w-full sm:w-3/5 lg:w-1/2 sm:pt-8 text-center sm:text-start '>
-          <h1 className='submittextdegisn text-4xl  font-semibold' >Let's talk</h1>
-          <p className='w-full sm:w-11/12 lg:w-3/4 py-4 text-sm' > <span className='font-bold text-xl' >Hyy there!</span><br /> Thank you so much for visiting my portfolio and taking the time to explore my projects. If you have any thoughts or feedback, I’d love to hear them! Your suggestions would be incredibly helpful and mean a lot to me as I continue to improve. <br /> Feel free to drop me a message anytime! <br /> <span className='text-xl font-bold'>Thanks for visiting!😊</span></p>
-          <div className='flex justify-start sm:my-4 ' >
+          <h1 className='text-xl md:text-4xl font-semibold invisible sm:visible' >Let's talk</h1>
+          <p className='w-full sm:w-11/12 lg:w-3/4 pb-10 sm:py-4 text-sm' > <span className='font-bold text-lg' >Hyy there!</span><br /> Thank you so much for visiting my portfolio and taking the time to explore my projects. If you have any thoughts or feedback, I’d love to hear them! Your suggestions would be incredibly helpful and mean a lot to me as I continue to improve. <br /> Feel free to drop me a message anytime! <br /> <span className='text-lg sm:text-xl font-bold'>Thanks for visiting!😊</span></p>
+          <div className='flex justify-start mb-4 sm:my-4 ' >
             <img src={mail_icon} alt="" className='h-3 w-10 mt-1 cursor-pointer ' />
             <p className='sm:px-2 text-sm cursor-pointer '>luckythakur13709@gmail.com  </p>
           </div>

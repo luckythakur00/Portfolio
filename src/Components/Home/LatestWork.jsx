@@ -9,7 +9,7 @@ function LatestWork() {
   return (
     <div id='latestwork' div className=' relative m-auto mt-10 mb-2'>
       <div className='m-auto text-center relative'>
-        <h1 className='text-5xl font-semibold py-7'>Latest Work</h1>
+        <h1 className='text-3xl md:text-5xl font-semibold py-7'>Latest Work</h1>
         <BiStar className=' animate-spin text-2xl absolute bottom-0' />
       </div>
       <BiCircle className='text-5xl animate-pulse absolute bottom-0 right-10' />
@@ -17,7 +17,7 @@ function LatestWork() {
 
       <div className='min-h-96 w-full xl:w-11/12 m-auto flex flex-wrap justify-between items-start ' >
         {/* First box */}
-        <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-4 ' >
+        <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-16 sm:mb-4 ' >
           <a href='https://lucky-you-tube-clone.netlify.app/' className='h-[60%] w-full lg:h-60 lg:w-[80%] m-auto' >
             <img className='project h-[92%] w-11/12 m-auto duration-300 rounded-lg ' src={project1} />
           </a>
@@ -31,7 +31,7 @@ function LatestWork() {
           </div>
         </div>
         {/* Second box */}
-        <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-4 ' >
+        <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-8 sm:mb-4 ' >
           <a href='https://expense-tracker-inreact.netlify.app/' className='h-[60%] w-full lg:h-60 lg:w-[80%] m-auto' >
             <img className='project h-[92%] w-11/12 m-auto duration-300 rounded-lg ' src={project2} />
           </a>
@@ -45,7 +45,7 @@ function LatestWork() {
           </div>
         </div>
         {/* Third box */}
-        <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-4 ' >
+        <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-8 sm:mb-4 ' >
           <a href='https://currencyconvertorrapp.netlify.app/' className='h-[60%] w-full lg:h-60 lg:w-[80%] m-auto' >
             <img className='project h-[92%] w-11/12 m-auto duration-300 rounded-lg ' src={project3} />
           </a>
@@ -59,7 +59,7 @@ function LatestWork() {
           </div>
         </div>
         {/* Forth box */}
-        {/* <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-4 ' >
+        {/* <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-8 sm:mb-4 ' >
           <a href='' className='h-[60%] w-full lg:h-60 lg:w-[80%] m-auto' >
             <img className='project h-[92%] w-11/12 m-auto duration-300 rounded-lg ' src={project_4} />
           </a>
