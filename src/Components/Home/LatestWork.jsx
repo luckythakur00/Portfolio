@@ -1,9 +1,9 @@
 import React from 'react'
-import project_4 from '../../assets/project_4.svg'
 import { BiCircle, BiStar } from 'react-icons/bi'
 import project1 from '../../assets/youtubeClone.png'
 import project2 from '../../assets/Expense-Tracker.png'
 import project3 from '../../assets/currencyConvertor.png'
+import project4 from '../../assets/Portfolio.png'
 
 function LatestWork() {
   return (
@@ -46,6 +46,20 @@ function LatestWork() {
         </div>
         {/* Third box */}
         <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-8 sm:mb-4 ' >
+          <a href='' className='h-[60%] w-full lg:h-60 lg:w-[80%] m-auto' >
+            <img className='project h-[92%] w-11/12 m-auto duration-300 rounded-lg ' src={project4} />
+          </a>
+          <div className='h-[50%] w-full lg:w-1/2 pl-4 lg:pl-2' >
+            <h1 className='text-base font-semibold pb-1' >Portfolio Website</h1>
+            <p>A fully responsive portfolio built with React.js and Tailwind CSS. Showcases my latest projects and includes a section highlighting my skills.</p>
+            <div className='flex justify-start items-center my-2' >
+              <a href='https://github.com/luckythakur00/Portfolio' className='btn h-8 w-24 pt-1.5 text-sm text-center bg-purple-700 rounded-full' >View Code</a>
+              <a href='' className='btn h-8 w-24 pt-1.5 text-sm text-center bg-purple-700 ml-2 rounded-full' >View Live</a>
+            </div>
+          </div>
+        </div>
+        {/* Forth box */}
+        <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-8 sm:mb-4 ' >
           <a href='https://currencyconvertorrapp.netlify.app/' className='h-[60%] w-full lg:h-60 lg:w-[80%] m-auto' >
             <img className='project h-[92%] w-11/12 m-auto duration-300 rounded-lg ' src={project3} />
           </a>
@@ -58,20 +72,6 @@ function LatestWork() {
             </div>
           </div>
         </div>
-        {/* Forth box */}
-        {/* <div className='h-96 w-96 sm:w-[48%] lg:h-64 m-auto rounded-lg flex flex-col lg:flex-row lg:pt-2 mb-8 sm:mb-4 ' >
-          <a href='' className='h-[60%] w-full lg:h-60 lg:w-[80%] m-auto' >
-            <img className='project h-[92%] w-11/12 m-auto duration-300 rounded-lg ' src={project_4} />
-          </a>
-          <div className='h-[50%] w-full lg:w-1/2 pl-4 lg:pl-2' >
-            <h1 className='text-base font-semibold pb-1' >Currency Convertor</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consequatur?</p>
-            <div className='flex justify-start items-center my-2' >
-              <a href='' className='btn h-8 w-24 pt-1.5 text-sm text-center bg-purple-700 rounded-full' >View Code</a>
-              <a href='' className='btn h-8 w-24 pt-1.5 text-sm text-center bg-purple-700 ml-2 rounded-full' >View Live</a>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   )
