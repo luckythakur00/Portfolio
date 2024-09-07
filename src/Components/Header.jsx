@@ -31,7 +31,7 @@ function Header({ setSideBar }) {
 
             {/* Resume & Contact me button */}
             <div className='h-0 w-0 md:h-10 md:w-auto' >
-                <a href="LuckyResume.pdf" className='h-0 w-0 md:h-auto md:w-auto invisible md:visible'>
+                <a href="LuckyResumeNew.pdf" className='h-0 w-0 md:h-auto md:w-auto invisible md:visible'>
                     <button className='btn h-0 w-0 md:h-8 md:w-20 lg:h-10 lg:w-28 md:mr-2 md:text-sm lg:text-base font-bold invisible md:visible border-2 border-purple-800 rounded-full'>Resume</button>
                 </a>
                 <Link to='contact' smooth={true} offset={-80} duration={500} className='h-0 w-0 md:h-auto md:w-auto ' >
