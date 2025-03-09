@@ -7,11 +7,6 @@ import SideBar from './Components/SideBar';
 function App() {
   const [sideBar, setSideBar] = useState(false);
 
-  // Todo:
-  // Change the footer. in the last one terms of services, privacy policy, contact with me REMOVE ALL OF THESE and also change the font size of the above one to small below my name
-  // Add updated resume in it.
-  // Check the content again, and change it if it isn't good.
-
   return (
     <div className='h-full w-full'>
       <div>
