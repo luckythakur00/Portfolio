@@ -6,7 +6,7 @@ function Header({ setSideBar }) {
     const [headervalue, setHeaderValue] = useState('home')
 
     return (
-        <div className='h-14 w-full flex justify-between py-2 px-2 lg:px-10 xl:px-14 fixed z-30 bg-black  text-white' >
+        <div className='h-14 w-full flex justify-between py-2 px-2 lg:px-10 xl:px-14 fixed z-30 shadow-md shadow-white/30 md:shadow-none bg-black  text-white' >
             {/* Logo */}
             <Link to='home' className='' smooth={true} offset={-60} duration={500} >
                 <div className='textanimation h-full text-xl md:text-lg lg:text-3xl font-semibold cursor-pointer' >Lucky Thakur</div>
@@ -18,7 +18,7 @@ function Header({ setSideBar }) {
                     <Link to='home' onClick={() => setHeaderValue('home')} smooth={true} offset={-60} duration={500} className={`underlinearrow ${headervalue === 'home' ? 'solidunderline' : ''} cursor-pointer`} >Home</Link>
                 </li>
                 <li className='headerBtn text-base list-none relative md:ml-5 lg:ml-12 ' >
-                    <Link to='aboutus' onClick={() => setHeaderValue('aboutus')} smooth={true} offset={-80} duration={500} className={`underlinearrow ${headervalue === 'aboutus' ? 'solidunderline' : ''} cursor-pointer`} >About Us</Link>
+                    <Link to='aboutus' onClick={() => setHeaderValue('aboutus')} smooth={true} offset={-80} duration={500} className={`underlinearrow ${headervalue === 'aboutus' ? 'solidunderline' : ''} cursor-pointer`} >About Me</Link>
                 </li>
                 <li className='headerBtn text-base list-none relative md:ml-5 lg:ml-12 ' >
                     <Link to='latestwork' onClick={() => setHeaderValue('latestwork')} smooth={true} offset={-60} duration={500} className={`underlinearrow ${headervalue === 'latestwork' ? 'solidunderline' : ''} cursor-pointer`} >Latest Work</Link>
@@ -27,7 +27,7 @@ function Header({ setSideBar }) {
                     <Link to='contact' onClick={() => setHeaderValue('contact')} smooth={true} offset={-80} duration={500} className={`underlinearrow ${headervalue === 'contact' ? 'solidunderline' : ''} cursor-pointer`} >Contact</Link>
                 </li>
             </div>
-            <img onClick={() => setSideBar(true)} className='h-10 w-10 md:h-0 md:w-0 absolute right-4 visible md:invisible cursor-pointer' src={menuopen} alt="" />
+            <img onClick={() => setSideBar(true)} className='h-8 w-8 md:h-0 md:w-0 absolute right-4 visible md:invisible cursor-pointer' src={menuopen} alt="" />
 
             {/* Resume & Contact me button */}
             <div className='h-0 w-0 md:h-10 md:w-auto' >

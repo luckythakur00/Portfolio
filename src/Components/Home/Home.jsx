@@ -8,11 +8,11 @@ import About from './About'
 function Home() {
   return (
     <div className='fullbackgroundcolor px-4 xl:px-12 relative ' >
-        <Hero />
-        <About/>
-        <LatestWork />
-        <Contact />
-        <Footer />
+      <Hero />
+      <About />
+      <LatestWork />
+      <Contact />
+      <Footer />
     </div>
   )
 }

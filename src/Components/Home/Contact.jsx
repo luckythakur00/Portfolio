@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import mail_icon from '../../assets/mail_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
@@ -6,15 +6,26 @@ import { toast } from 'react-toastify'
 import { BiCircle, BiCross } from 'react-icons/bi'
 
 function Contact() {
+  const [userName, setUserName] = useState('')
+  const [userEmail, setUserEmail] = useState('');
+  const [userMessage, setUserMessage] = useState('');
+  const [submited, setSubmited] = useState(false)
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
+  const onSubmit = async (e) => {
+    e.preventDefault();
 
-    formData.append("access_key", "08f8765f-73dd-4744-bbd5-6acfca14dee3");
+    if (!userName || !userEmail || !userMessage) {
+      toast.warn("All fields are required!", { theme: "dark", style: { fontSize: "14px", width: '250px' } });
+      return;
+    }
+    setSubmited(true);
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    const userData = {
+      access_key: "08f8765f-73dd-4744-bbd5-6acfca14dee3",
+      name: userName,
+      email: userEmail,
+      message: userMessage
+    };
 
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -22,12 +33,18 @@ function Contact() {
         "Content-Type": "application/json",
         Accept: "application/json"
       },
-      body: json
+      body: JSON.stringify(userData)
     }).then((res) => res.json());
 
     if (res.success) {
-      toast.success('Message sent successfully', { pauseOnHover: false, theme: 'dark' })
+      toast.success("Message sent successfully", { theme: "dark", style: { fontSize: "14px", width: '250px' } });
+    } else {
+      toast.error("Server Error", { theme: "dark" });
     }
+    setUserName("");
+    setUserEmail("");
+    setUserMessage("");
+    setSubmited(false);
   };
 
   return (
@@ -64,18 +81,18 @@ function Contact() {
         <form onSubmit={onSubmit} className='h-full w-full sm:w-2/5 lg:w-1/2 mt-10 sm:mt-0 '>
           <div className='flex flex-col'>
             <label htmlFor='' className='sm:py-4 text-base' >Your Name</label>
-            <input name='name' type="text" placeholder='Enter your name' className='h-10 w-full lg:w-4/5 bg-gray-900 pl-3 text-sm border-none outline-none text-white rounded' />
+            <input name='name' type="text" value={userName} onChange={(e) => setUserName(e.target.value)} placeholder='Enter your name' className='h-10 w-full lg:w-4/5 bg-gray-900 pl-3 text-sm border-none outline-none text-white rounded' />
           </div>
           <div className='flex flex-col' >
             <label htmlFor='' className='pt-4 text-base sm:pb-2'>Your Email</label>
-            <input name='email' type='email' placeholder='Enter you email' className='h-10 w-full lg:w-4/5 bg-gray-900 pl-3 text-sm border-none outline-none text-white rounded' />
+            <input name='email' type='email' value={userEmail} onChange={(e) => setUserEmail(e.target.value)} placeholder='Enter you email' className='h-10 w-full lg:w-4/5 bg-gray-900 pl-3 text-sm border-none outline-none text-white rounded' />
           </div>
           <div className='flex flex-col' >
             <label htmlFor='' className='pt-4 text-base sm:pb-2'>Write Your message here</label>
-            <textarea name='message' type="text" placeholder='Enter your Message' className='h-48 md:h-52 w-full lg:w-4/5 pt-4 bg-gray-900 pl-3 text-sm border-none outline-none text-white rounded overflow-hidden' />
+            <textarea name='message' type="text" value={userMessage} onChange={(e) => setUserMessage(e.target.value)} placeholder='Enter your Message' className='h-48 md:h-52 w-full lg:w-4/5 pt-4 bg-gray-900 pl-3 text-sm border-none outline-none text-white rounded overflow-hidden' />
           </div>
           <div className='my-4 sm:my-8 ' >
-            <button className='btn h-10 w-36 bg-purple-700 rounded-md font-semibold mb-10 text-base ' type="submit" >Submit Now</button>
+            <button type="submit" disabled={submited ? true : false} className={`h-10 w-36 ${submited ? '' : 'btn'} bg-purple-700 rounded-md font-semibold mb-10 text-base`} >Submit Now</button>
           </div>
         </form>
       </div>
