@@ -1,11 +1,10 @@
-import React from 'react'
 import { BiArrowBack, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
 import { Link } from 'react-scroll'
 
 function Hero() {
   return (
     <div id='home' className='h-full w-full md:w-[90%] lg:h-[90vh] lg:w-full md:pl-10 lg:pl-0 pt-0 sm:pt-10 lg:py-36 my-10 md:my-20 lg:my-0' >
-      <div className='h-full w-full lg:w-3/4 text-center md:text-start' >
+      <div className='h-full ml-10 mt-6 w-full lg:w-3/4 text-center md:text-start' >
         <div className='w-[95%] font-bold mb-6' >
           <h1 className='text-3xl sm:text-4xl md:text-6xl' >I'm <span className='textcolor'>Lucky Thakur</span></h1>
           <h1 className='w-full lg:w-[80%] text-lg sm:text-3xl md:text-4xl' >MERN Stack Developer passionate about building scalable web applications.</h1>
@@ -30,3 +29,5 @@ function Hero() {
 }
 
 export default Hero
+
+

@@ -4,10 +4,20 @@ import project1 from '../../assets/QuickChat.png'
 import project2 from '../../assets/youtubeClone.png'
 import project3 from '../../assets/Portfolio.png'
 import project4 from '../../assets/Expense-Tracker.png'
+import project5 from '../../assets/FoodRush.png'
+import eventCasters from '../../assets/eventcasters.png'
+import houseOfLagan from '../../assets/houseoflagan.png'
 
 function LatestWork() {
 
   const projects = [
+    {
+      projectImg: project5,
+      projectCode: 'https://github.com/luckythakur00/FoodRush',
+      projectView: 'https://foodrush-i4mm.onrender.com/',
+      projectTitle: 'FoodRush',
+      projectDescription: 'FoodRush is a MERN Stack food app where users can browse dishes, add them to their cart, and view past orders. Built using React.js, Tailwind CSS, Express.js, MongoDB Atlas, Cloudinary, and Zustand.'
+    },
     {
       projectImg: project1,
       projectCode: 'https://github.com/luckythakur00/QuickChat',
@@ -16,26 +26,38 @@ function LatestWork() {
       projectDescription: 'QuickChat is a MERN Stack messaging app, where people can send messages to each other. I have used React.js, Tailwind CSS, Node.js, Express.js, MongoDB, socket.io and zustand to make the project.'
     },
     {
-      projectImg: project2,
-      projectCode: 'https://github.com/luckythakur00/You-Tube-Clone',
-      projectView: 'https://lucky-you-tube-clone.netlify.app/',
-      projectTitle: 'You Tube Clone',
-      projectDescription: 'This is a YouTube clone built by using React.js, Tailwind CSS, and Context API for efficient state management. It features a sleek, user-friendly, and fully responsive design.'
+      projectImg: eventCasters,
+      projectView: 'https://theeventcasters.com/',
+      projectTitle: 'Event Casters',
+      projectDescription: 'EventCasters is a MERN Stack event management website, where people can book artist and manage weddins. I have used React.js, Tailwind CSS, Node.js, Express.js, MongoDB, socket.io and zustand to make the project.'
     },
     {
-      projectImg: project3,
-      projectCode: 'https://github.com/luckythakur00/Portfolio',
-      projectView: 'https://lucky00-portfolio.netlify.app/',
-      projectTitle: 'Portfolio',
-      projectDescription: 'A fully responsive portfolio built with React.js and Tailwind CSS. Showcases my latest projects and includes a section highlighting my skills.'
+      projectImg: houseOfLagan,
+      projectView: 'https://houseoflagan.netlify.app/',
+      projectTitle: 'House Of Lagan',
+      projectDescription: 'House of Lagan is a MERN Stack wedding management website, where people can manage there wedding. I have used React.js, Tailwind CSS, Node.js, Express.js, MongoDB, socket.io and zustand to make the project.'
     },
-    {
-      projectImg: project4,
-      projectCode: 'https://github.com/luckythakur00/Expense-Tracker',
-      projectView: 'https://expense-tracker-inreact.netlify.app/',
-      projectTitle: 'Expense Tracker',
-      projectDescription: 'This is a responsive Expense Tracker built with React.js and Tailwind CSS for easy expense management.'
-    },
+    //  {
+    //   projectImg: project2,
+    //   projectCode: 'https://github.com/luckythakur00/You-Tube-Clone',
+    //   projectView: 'https://lucky-you-tube-clone.netlify.app/',
+    //   projectTitle: 'You Tube Clone',
+    //   projectDescription: 'This is a YouTube clone built by using React.js, Tailwind CSS, and Context API for efficient state management. It features a sleek, user-friendly, and fully responsive design.'
+    // },
+    // {
+    //   projectImg: project3,
+    //   projectCode: 'https://github.com/luckythakur00/Portfolio',
+    //   projectView: 'https://lucky00-portfolio.netlify.app/',
+    //   projectTitle: 'Portfolio',
+    //   projectDescription: 'A fully responsive portfolio built with React.js and Tailwind CSS. Showcases my latest projects and includes a section highlighting my skills.'
+    // },
+    // {
+    //   projectImg: project4,
+    //   projectCode: 'https://github.com/luckythakur00/Expense-Tracker',
+    //   projectView: 'https://expense-tracker-inreact.netlify.app/',
+    //   projectTitle: 'Expense Tracker',
+    //   projectDescription: 'This is a responsive Expense Tracker built with React.js and Tailwind CSS for easy expense management.'
+    // },
   ];
 
   return (
@@ -58,7 +80,10 @@ function LatestWork() {
                 <h1 className='text-base font-semibold pb-1' >{val.projectTitle}</h1>
                 <p>{val.projectDescription}</p>
                 <div className='flex justify-start items-center my-2' >
-                  <a href={val.projectCode} className='h-8 w-24 pt-1.5 text-sm text-center static z-10 bg-purple-700 btn rounded-full' >View Code</a>
+                  {
+                    val.projectCode &&
+                    <a href={val.projectCode} className='h-8 w-24 pt-1.5 text-sm text-center static z-10 bg-purple-700 btn rounded-full' >View Code</a>
+                  }
                   <a href={val.projectView} className='h-8 w-24 pt-1.5 text-sm text-center static z-10 bg-purple-700 btn ml-2 rounded-full' >View Live</a>
                 </div>
               </div>

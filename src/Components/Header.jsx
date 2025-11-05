@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import menuopen from '../assets/menu_open.svg'
 import { Link } from 'react-scroll'
-import resume from '../assets/resume.pdf'
+import resume from '../assets/NewResume.pdf'
 
 function Header({ setSideBar }) {
     const [headervalue, setHeaderValue] = useState('home')
