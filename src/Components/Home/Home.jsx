@@ -4,6 +4,7 @@ import LatestWork from './LatestWork'
 import Contact from './Contact'
 import About from './About'
 import Skills from './Skills'
+import Experience from './Experience'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Hero />
       <About />
       <Skills />
+      <Experience />
       <LatestWork />
       <Contact />
       <Footer />

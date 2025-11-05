@@ -29,13 +29,13 @@ function LatestWork() {
       projectImg: eventCasters,
       projectView: 'https://theeventcasters.com/',
       projectTitle: 'Event Casters',
-      projectDescription: 'EventCasters is a MERN Stack event management website, where people can book artist and manage weddins. I have used React.js, Tailwind CSS, Node.js, Express.js, MongoDB, socket.io and zustand to make the project.'
+      projectDescription: 'EventCasters is a MERN Stack event management website I built during my internship, where users can book artists and manage weddings. I used React.js, Tailwind CSS, Zustand, Cloudinary, and MongoDB Atlas to develop the project.'
     },
     {
       projectImg: houseOfLagan,
       projectView: 'https://houseoflagan.netlify.app/',
       projectTitle: 'House Of Lagan',
-      projectDescription: 'House of Lagan is a MERN Stack wedding management website, where people can manage there wedding. I have used React.js, Tailwind CSS, Node.js, Express.js, MongoDB, socket.io and zustand to make the project.'
+      projectDescription: 'House of Lagan is a MERN Stack wedding management website I built during my internship, where users can manage their weddings. I used React.js, Tailwind CSS, Zustand, Cloudinary, and MongoDB Atlas to develop the project.'
     },
     //  {
     //   projectImg: project2,
