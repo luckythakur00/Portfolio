@@ -7,7 +7,7 @@ function Hero() {
       <div className='h-full ml-10 mt-6 w-full lg:w-3/4 text-center md:text-start' >
         <div className='w-[95%] font-bold mb-6' >
           <h1 className='text-3xl sm:text-4xl md:text-6xl' >I'm <span className='textcolor'>Lucky Thakur</span></h1>
-          <h1 className='w-full lg:w-[80%] text-lg sm:text-3xl md:text-4xl' >MERN Stack Developer passionate about building scalable web applications.</h1>
+          <h1 className='w-full lg:w-[80%] text-lg sm:text-3xl md:text-4xl' >Full Stack Developer passionate about building scalable web applications.</h1>
         </div>
         <p className='text-xs md:text-sm md:w-[65%] lg:w-[50%] text-center md:text-start text-gray-400'>Passionate about building scalable web applications and seamless user experiences. Skilled in HTML, CSS, JavaScript, Tailwind CSS, React.js, Node.js, Express.js, and MongoDB. Seeking opportunities to grow and contribute to innovative projects.</p>
 

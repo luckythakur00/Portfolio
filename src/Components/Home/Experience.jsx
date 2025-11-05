@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Experience() {
     return (
         <section id="experience" className="min-h-screen">
@@ -12,9 +10,7 @@ function Experience() {
                         <p className="text-md mt-1 sm:mt-0">June 2025 – August 2025</p>
                     </div>
                     <p className="text-xl font-semibold mb-4">Event Casters</p>
-                    <p className="leading-relaxed mb-6">
-                        Gained hands-on experience as a Full Stack Web Developer intern, contributing to the development of two key websites. Focused on building responsive, user-friendly interfaces and backend functionalities.
-                    </p>
+                    <p className="leading-relaxed mb-6">Gained hands-on experience as a Full Stack Web Developer intern, contributing to the development of two key websites. Focused on building responsive, user-friendly interfaces and backend functionalities.</p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
