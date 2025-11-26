@@ -37,13 +37,13 @@ function LatestWork() {
       projectTitle: 'House Of Lagan',
       projectDescription: 'House of Lagan is a MERN Stack wedding management website I built during my internship, where users can manage their weddings. I used React.js, Tailwind CSS, Zustand, Cloudinary, and MongoDB Atlas to develop the project.'
     },
-    //  {
-    //   projectImg: project2,
-    //   projectCode: 'https://github.com/luckythakur00/You-Tube-Clone',
-    //   projectView: 'https://lucky-you-tube-clone.netlify.app/',
-    //   projectTitle: 'You Tube Clone',
-    //   projectDescription: 'This is a YouTube clone built by using React.js, Tailwind CSS, and Context API for efficient state management. It features a sleek, user-friendly, and fully responsive design.'
-    // },
+     {
+      projectImg: project2,
+      projectCode: 'https://github.com/luckythakur00/You-Tube-Clone',
+      projectView: 'https://lucky-you-tube-clone.netlify.app/',
+      projectTitle: 'You Tube Clone',
+      projectDescription: 'This is a YouTube clone built by using React.js, Tailwind CSS, and Context API for efficient state management. It features a sleek, user-friendly, and fully responsive design.'
+    },
     // {
     //   projectImg: project3,
     //   projectCode: 'https://github.com/luckythakur00/Portfolio',
@@ -51,13 +51,13 @@ function LatestWork() {
     //   projectTitle: 'Portfolio',
     //   projectDescription: 'A fully responsive portfolio built with React.js and Tailwind CSS. Showcases my latest projects and includes a section highlighting my skills.'
     // },
-    // {
-    //   projectImg: project4,
-    //   projectCode: 'https://github.com/luckythakur00/Expense-Tracker',
-    //   projectView: 'https://expense-tracker-inreact.netlify.app/',
-    //   projectTitle: 'Expense Tracker',
-    //   projectDescription: 'This is a responsive Expense Tracker built with React.js and Tailwind CSS for easy expense management.'
-    // },
+    {
+      projectImg: project4,
+      projectCode: 'https://github.com/luckythakur00/Expense-Tracker',
+      projectView: 'https://expense-tracker-inreact.netlify.app/',
+      projectTitle: 'Expense Tracker',
+      projectDescription: 'This is a responsive Expense Tracker built with React.js and Tailwind CSS for easy expense management.'
+    },
   ];
 
   return (
